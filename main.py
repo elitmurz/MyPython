@@ -1,3 +1,4 @@
+import pytest
 from selene import browser, have
 
 def test_captcha_should_be_shown():
@@ -7,6 +8,3 @@ def test_captcha_should_be_shown():
     browser.element('html').should(have.text('Об этой странице'))
 
 
-name = input ("Введи свое имя, воин: ")
-print("Добро пожаловать в вальгалу: ", name)
-print("Ты достоин этого по праву! ", name)

@@ -1,7 +1,5 @@
 from playwright.sync_api import sync_playwright
 
-
-
 def test_captcha_should_be_shown():
     with sync_playwright() as p:
         # Запускаем браузер
